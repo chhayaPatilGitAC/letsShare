@@ -15,7 +15,7 @@ const formElem = document.getElementById('emailForm');
 
 const alertMessage = document.querySelector('.alertMessage');
 
-const host = 'http://localhost:8000';
+const host = 'https://lets-share-data.herokuapp.com';
 const fileUploadApi = `${host}/file/uploadFile`;
 const sendEmailApi = `${host}/file/sendEmail`;
 const maxSize = 100 * 1024 * 1024;
@@ -133,6 +133,6 @@ const showAlert = (message) => {
     alertMessage.style.transform = 'translate(-50%, 60px)';
     clearTimeout(timeOut);
     timeOut = setTimeout(() => {
-        alertMessage.style.transform = 'translate(-50%, 105px)';
+        alertMessage.style.transform = 'translate(-50%, 110px)';
     }, 2000);
 }
