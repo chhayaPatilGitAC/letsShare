@@ -20,6 +20,7 @@ body, .upload-container{
 
 body {
     overflow: hidden;
+    position: relative;
 }
 
 .outer-container {
