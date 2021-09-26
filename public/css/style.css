@@ -211,6 +211,7 @@ body {
     transform: translate(-50%, 120px);
     border-radius: 5px;
     box-shadow: rgba(87, 81, 81, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    display: none;
 }
 
 .bg-section {
@@ -262,7 +263,6 @@ body {
         --outer-width : 320px;
         --container-width :252px;
     }
-
     .bg-section {
         display: none;
     }
