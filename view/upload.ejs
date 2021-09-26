@@ -1,0 +1,53 @@
+<html>
+
+<head>
+    <title>PicShare - file sharing app</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+</head>
+
+<body>
+    <section class="outer-container">
+        <div class="upload-container">
+            <div class='item-container'>
+                <img src='images/upload.png' alt='upload-icon' class="left" draggable="false" />
+                <img src='images/upload.png' alt='upload-icon' class='right' draggable="false" />
+                <img src='images/upload.png' alt='upload-icon' class='center' draggable="false" />
+            </div>
+            <input type="file" name="myFile" id="myFile" />
+            <div>Drop your files here or <span class="browse">Browse</span></div>
+        </div>
+        <div class="progress-container">
+            <div class="progress-bg"></div>
+            <div class="progress-inner-container">
+                <div class="title">Uploading</div>
+                <div class="percent"><span id="percent">0</span>%</div>
+                <div class="progress-bar"></div>
+            </div>
+        </div>
+        <div class="link-email-container">
+            <p class="sub-header">Link will expire in 24 hrs.</p>
+            <div class="link-section">
+                <input type="text" id="link" value="" readonly="true" />
+                <img src="images/copy.svg" alt="copy-icon" id="copy" draggable="false" />
+            </div>
+            <p class="sub-header">or Send via email</p>
+            <div class="email-section">
+                <form action="" id="emailForm">
+                    <div class="input-section">
+                        Your email:<input type="email" name="sender" id="sender" required />
+                    </div>
+                    <div class="input-section">
+                        Receiver's email:<input type="email" name="receiver" id="receiver" required />
+                    </div>
+                    <button name='sendEmail'>Send</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <div class="bg-section"></div>
+    <div class="alertMessage"></div>
+    <script src="js/client.js"></script>
+</body>
+
+</html>

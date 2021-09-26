@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>PicShare - file sharing app</title>
+        <link rel="stylesheet" type="text/css" href="/css/style.css" />
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+    </head>
+    <body>
+        <section class="outer-container">
+            <div class="download-container">
+                <% if (error) { %>
+                    <p><%= error %></p>
+                 <% } else { %>
+                    <img src="/images/download.jpg" alt='download-icon'/>
+                    <h2>Your file is ready to download</h2>
+                    <p>Link expires in 24 hours</p>
+                    <h4><%= filename %></h4>
+                    <p class="file-size">File size : <%= filesize %> KB</p>
+                    <a href=<%= downloadLink %> class="download-btn">Download</a>
+                <% }  %>
+            </div>
+        </section>
+    </body>
+</html>
