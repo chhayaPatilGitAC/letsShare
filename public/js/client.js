@@ -130,9 +130,9 @@ let timeOut;
 const showAlert = (message) => {
     fileInput.value = '';
     alertMessage.innerText = message;
-    alertMessage.style.transform = 'translate(-50%, 60px)';
+    alertMessage.style.transform = 'translate(-50%, 0)';
     clearTimeout(timeOut);
     timeOut = setTimeout(() => {
-        alertMessage.style.transform = 'translate(-50%, 80px)';
+        alertMessage.style.transform = 'translate(-50%, 60px)';
     }, 2000);
 }
