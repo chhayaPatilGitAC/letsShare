@@ -129,12 +129,10 @@ formElem.addEventListener('submit', async (e) => {
 let timeOut;
 const showAlert = (message) => {
     fileInput.value = '';
-    alertMessage.style.display = 'block';
     alertMessage.innerText = message;
     alertMessage.style.transform = 'translate(-50%, 60px)';
     clearTimeout(timeOut);
     timeOut = setTimeout(() => {
-        alertMessage.style.display = 'none';
-        alertMessage.style.transform = 'translate(-50%, 120px)';
+        alertMessage.style.transform = 'translate(-50%, 80px)';
     }, 2000);
 }
