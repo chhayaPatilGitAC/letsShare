@@ -133,6 +133,6 @@ const showAlert = (message) => {
     alertMessage.style.transform = 'translate(-50%, 60px)';
     clearTimeout(timeOut);
     timeOut = setTimeout(() => {
-        alertMessage.style.transform = 'translate(-50%, 110px)';
+        alertMessage.style.transform = 'translate(-50%, 120px)';
     }, 2000);
 }
